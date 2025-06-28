@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Computing and Cryptography: Preparing for the Post-Quantum Era - Lina Rashdan</title>
+    <meta name="description" content="Quantum computing threatens current cryptographic standards. Explore post-quantum cryptography and how organizations can prepare for this paradigm shift.">
+    <meta name="keywords" content="quantum computing, post-quantum cryptography, cybersecurity, encryption, quantum threats">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Lina Rashdan</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#chat" class="nav-link">Virtual Twin</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="blog-archive.html" class="nav-link">Blog</a></li>
+                <li><a href="index.html#resume" class="nav-link">Resume</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <article class="article">
+        <header class="article-header">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <a href="blog-archive.html">Blog</a>
+                    <span>/</span>
+                    <span>Quantum Computing and Cryptography</span>
+                </nav>
+                
+                <div class="article-meta">
+                    <span class="article-category">Quantum Computing</span>
+                    <span class="article-date">December 15, 2024</span>
+                    <span class="article-author">By Lina Rashdan</span>
+                    <span class="article-read-time">10 min read</span>
+                </div>
+                
+                <h1 class="article-title">Quantum Computing and Cryptography: Preparing for the Post-Quantum Era</h1>
+                
+                <div class="article-image">
+                    <img src="https://images.pexels.com/photos/5380792/pexels-photo-5380792.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Quantum Computing Technology" loading="lazy">
+                </div>
+            </div>
+        </header>
+
+        <!-- Article Content -->
+        <div class="article-content">
+            <div class="container">
+                <div class="article-body">
+                    <p class="article-intro">
+                        The advent of quantum computing represents one of the most significant technological 
+                        disruptions in modern history, particularly for the field of cryptography. As quantum 
+                        computers advance toward practical implementation, they pose an existential threat to 
+                        the cryptographic foundations that secure our digital infrastructure, financial systems, 
+                        and communications networks.
+                    </p>
+
+                    <h2>The Quantum Threat to Current Cryptography</h2>
+                    <p>
+                        Current cryptographic systems rely on mathematical problems that are computationally 
+                        infeasible for classical computers to solve within reasonable timeframes. RSA encryption, 
+                        elliptic curve cryptography, and Diffie-Hellman key exchange all depend on the difficulty 
+                        of factoring large integers or solving discrete logarithm problems. These mathematical 
+                        foundations have protected digital communications for decades.
+                    </p>
+                    
+                    <p>
+                        However, quantum computers leverage quantum mechanical phenomena such as superposition 
+                        and entanglement to perform calculations exponentially faster than classical computers 
+                        for specific problems. Shor's algorithm, developed by mathematician Peter Shor in 1994, 
+                        demonstrates that a sufficiently powerful quantum computer could efficiently factor large 
+                        integers and solve discrete logarithm problems, effectively breaking most current 
+                        public-key cryptographic systems.
+                    </p>
+
+                    <blockquote class="article-quote">
+                        "The transition to post-quantum cryptography is not a question of if, but when. 
+                        Organizations that begin preparing now will be better positioned to maintain security 
+                        in the quantum era."
+                    </blockquote>
+
+                    <h2>Understanding Quantum Computing Capabilities</h2>
+                    <p>
+                        Quantum computers operate on fundamentally different principles than classical computers. 
+                        While classical bits exist in definite states of 0 or 1, quantum bits (qubits) can exist 
+                        in superposition, representing both states simultaneously. This property, combined with 
+                        quantum entanglement and interference, allows quantum computers to explore multiple 
+                        solution paths in parallel.
+                    </p>
+                    
+                    <p>
+                        Current quantum computers are still in the Noisy Intermediate-Scale Quantum (NISQ) era, 
+                        characterized by limited qubit counts and high error rates. However, major technology 
+                        companies and research institutions are making rapid progress in quantum error correction, 
+                        qubit stability, and scaling. IBM, Google, Microsoft, and other organizations have 
+                        demonstrated quantum supremacy in specific computational tasks, marking significant 
+                        milestones toward practical quantum computing.
+                    </p>
+
+                    <div class="article-highlight">
+                        <h3>Timeline of Quantum Threats:</h3>
+                        <ul>
+                            <li><strong>2030-2035:</strong> Quantum computers may threaten symmetric encryption (AES-128)</li>
+                            <li><strong>2035-2040:</strong> RSA-2048 and ECC-256 could be vulnerable</li>
+                            <li><strong>2040-2050:</strong> Most current cryptographic systems at risk</li>
+                            <li><strong>Present Day:</strong> "Harvest now, decrypt later" attacks already occurring</li>
+                        </ul>
+                    </div>
+
+                    <h2>Post-Quantum Cryptography Standards</h2>
+                    <p>
+                        In response to the quantum threat, the National Institute of Standards and Technology 
+                        (NIST) has been leading a multi-year process to standardize post-quantum cryptographic 
+                        algorithms. These algorithms are designed to be secure against both classical and quantum 
+                        computer attacks, relying on mathematical problems that are believed to be difficult even 
+                        for quantum computers to solve.
+                    </p>
+                    
+                    <p>
+                        The NIST Post-Quantum Cryptography Standardization process has evaluated hundreds of 
+                        candidate algorithms across multiple rounds of analysis. The selected algorithms fall 
+                        into several categories: lattice-based cryptography, hash-based signatures, code-based 
+                        cryptography, and multivariate cryptography. Each approach offers different trade-offs 
+                        in terms of security assumptions, performance characteristics, and implementation 
+                        requirements.
+                    </p>
+
+                    <h2>Implementation Challenges and Considerations</h2>
+                    <p>
+                        Transitioning to post-quantum cryptography presents significant technical and operational 
+                        challenges. Post-quantum algorithms typically require larger key sizes and signatures 
+                        compared to current cryptographic systems, potentially impacting network bandwidth, 
+                        storage requirements, and computational performance. Organizations must carefully evaluate 
+                        these trade-offs when planning their migration strategies.
+                    </p>
+                    
+                    <p>
+                        Hybrid approaches that combine classical and post-quantum algorithms offer a pragmatic 
+                        migration path, providing security against both current and future threats while allowing 
+                        organizations to gain experience with post-quantum implementations. This approach also 
+                        provides fallback options if vulnerabilities are discovered in specific post-quantum 
+                        algorithms during the transition period.
+                    </p>
+
+                    <h2>Organizational Preparedness Strategies</h2>
+                    <p>
+                        Organizations must begin preparing for the post-quantum transition immediately, even 
+                        though large-scale quantum computers may still be years away. The "harvest now, decrypt 
+                        later" threat means that adversaries may already be collecting encrypted data with the 
+                        intention of decrypting it once quantum computers become available. This is particularly 
+                        concerning for data with long-term sensitivity requirements.
+                    </p>
+                    
+                    <p>
+                        Effective preparation begins with comprehensive cryptographic inventory and risk assessment. 
+                        Organizations must identify all cryptographic implementations across their infrastructure, 
+                        applications, and data flows. This includes not only obvious encryption implementations 
+                        but also embedded cryptography in IoT devices, industrial control systems, and legacy 
+                        applications that may be difficult to update.
+                    </p>
+
+                    <h2>Industry-Specific Implications</h2>
+                    <p>
+                        Different industries face varying levels of quantum risk based on their data sensitivity, 
+                        regulatory requirements, and infrastructure characteristics. Financial services institutions 
+                        must protect transaction data and customer information that could remain sensitive for 
+                        decades. Healthcare organizations need to secure patient records and research data with 
+                        similar longevity requirements.
+                    </p>
+                    
+                    <p>
+                        Critical infrastructure sectors including energy, transportation, and telecommunications 
+                        face unique challenges due to the prevalence of legacy systems and the difficulty of 
+                        updating embedded cryptographic implementations. These sectors must balance security 
+                        requirements with operational continuity and safety considerations, often requiring 
+                        extended migration timelines and specialized implementation approaches.
+                    </p>
+
+                    <h2>International Cooperation and Standards</h2>
+                    <p>
+                        The quantum threat is global in nature, requiring international cooperation and coordination 
+                        in developing and implementing post-quantum cryptographic standards. Different countries 
+                        and regions are pursuing various approaches to post-quantum cryptography, with some 
+                        focusing on specific algorithm families or implementation strategies based on their 
+                        unique security requirements and threat models.
+                    </p>
+                    
+                    <p>
+                        Interoperability between different post-quantum implementations will be crucial for 
+                        maintaining global communications and commerce. International standards organizations, 
+                        industry consortiums, and government agencies are working to ensure that post-quantum 
+                        cryptographic systems can work together seamlessly across different platforms, vendors, 
+                        and jurisdictions.
+                    </p>
+
+                    <h2>Future Research and Development</h2>
+                    <p>
+                        Post-quantum cryptography research continues to evolve as our understanding of quantum 
+                        computing capabilities advances. New attack techniques, algorithm optimizations, and 
+                        implementation improvements are constantly being developed. Organizations must stay 
+                        informed about these developments and be prepared to adapt their cryptographic strategies 
+                        as the field evolves.
+                    </p>
+                    
+                    <p>
+                        Quantum key distribution (QKD) and other quantum-native security technologies offer 
+                        alternative approaches to securing communications in the quantum era. While these 
+                        technologies face practical limitations in terms of distance, infrastructure requirements, 
+                        and cost, they may play important roles in specific high-security applications and could 
+                        complement post-quantum cryptographic implementations.
+                    </p>
+
+                    <div class="article-conclusion">
+                        <h3>Preparing for the Quantum Future</h3>
+                        <p>
+                            The transition to post-quantum cryptography represents one of the most significant 
+                            security challenges of our time, requiring proactive planning, substantial investment, 
+                            and coordinated effort across the entire technology ecosystem. Organizations that 
+                            begin their post-quantum journey now will be better positioned to maintain security 
+                            and competitive advantage in the quantum era. The time for preparation is now—the 
+                            quantum future is closer than we think.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Article Sidebar -->
+                <aside class="article-sidebar">
+                    <div class="author-bio">
+                        <h3>About the Author</h3>
+                        <div class="author-info">
+                            <div class="author-avatar">
+                                <img src="/profile.jpg" alt="Lina Rashdan" loading="lazy">
+                            </div>
+                            <div class="author-details">
+                                <h4>Lina Rashdan</h4>
+                                <p>Cybersecurity Engineer and AI Security Researcher passionate about the intersection of artificial intelligence and security. Currently working at DOCAPOSTE in Paris, with expertise in penetration testing, AI vulnerabilities, and secure system design.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="related-articles">
+                        <h3>Related Articles</h3>
+                        <div class="related-list">
+                            <a href="blog-adversarial-ai.html" class="related-item">
+                                <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Adversarial AI" loading="lazy">
+                                <div class="related-content">
+                                    <h4>Adversarial AI: Defending Against Machine Learning Attacks</h4>
+                                    <span class="related-date">December 20, 2024</span>
+                                </div>
+                            </a>
+                            
+                            <a href="blog-zero-trust.html" class="related-item">
+                                <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Zero Trust Security" loading="lazy">
+                                <div class="related-content">
+                                    <h4>Zero Trust Architecture: The Future of Network Security</h4>
+                                    <span class="related-date">January 10, 2025</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="share-article">
+                        <h3>Share This Article</h3>
+                        <div class="share-buttons">
+                            <a href="#" class="share-btn twitter" aria-label="Share on X">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="share-btn linkedin" aria-label="Share on LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="share-btn facebook" aria-label="Share on Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="share-btn email" aria-label="Share via Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <!-- Article Navigation -->
+        <nav class="article-navigation">
+            <div class="container">
+                <div class="nav-links">
+                    <a href="blog-adversarial-ai.html" class="nav-prev">
+                        <i class="fas fa-chevron-left"></i>
+                        <div class="nav-content">
+                            <span class="nav-label">Previous Article</span>
+                            <span class="nav-title">Adversarial AI: Defending Against Machine Learning Attacks</span>
+                        </div>
+                    </a>
+                    
+                    <a href="blog-archive.html" class="nav-home">
+                        <i class="fas fa-th-large"></i>
+                        <span>All Articles</span>
+                    </a>
+                    
+                    <a href="blog-zero-trust.html" class="nav-next">
+                        <div class="nav-content">
+                            <span class="nav-label">Next Article</span>
+                            <span class="nav-title">Zero Trust Architecture: The Future of Network Security</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </article>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest insights on technology, cybersecurity, and AI delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Lina Rashdan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

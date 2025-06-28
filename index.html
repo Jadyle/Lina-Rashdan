@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lina Rashdan - AI & Cybersecurity</title>
+    <meta name="description" content="Lina Rashdan - AI & Cybersecurity Professional. Passionate about securing digital infrastructures and advancing AI security research.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Virtual Twin Avatar -->
+    <div class="virtual-twin" id="virtualTwin">
+        <div class="avatar-container">
+            <img src="/0615(1).gif" alt="Lina's Virtual Twin" class="avatar-gif">
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring pulse-ring-delay"></div>
+        </div>
+        <div class="twin-tooltip">
+            <span>Chat with my Virtual Twin</span>
+        </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <div class="chat-interface" id="chatInterface">
+        <div class="chat-header">
+            <div class="chat-avatar">
+                <img src="/0615(1).gif" alt="Lina's Virtual Twin">
+            </div>
+            <div class="chat-title">
+                <h3>Lina's Virtual Twin</h3>
+                <p>Ask me anything about my experience and skills</p>
+            </div>
+            <button class="chat-close" id="chatClose">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <p>Hello! I'm Lina's virtual twin. I can answer questions about my background, experience, and skills in cybersecurity and IT. What would you like to know?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat-suggestions" id="chatSuggestions">
+            <button class="suggestion-btn" data-suggestion="Tell me about your education">Education</button>
+            <button class="suggestion-btn" data-suggestion="What's your experience in cybersecurity?">Experience</button>
+            <button class="suggestion-btn" data-suggestion="What projects have you worked on?">Projects</button>
+            <button class="suggestion-btn" data-suggestion="What are your technical skills?">Skills</button>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="chatInput" placeholder="Ask about my experience, skills, or projects...">
+            <button id="sendMessage">Send</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Lina Rashdan</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#chat" class="nav-link">Virtual Twin</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Lina Rashdan</span>
+                    <span class="title-line">AI & Cybersecurity</span>
+                    <span class="title-line">Professional</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Passionate about securing digital infrastructures and advancing AI security research. 
+                    Currently working as a Cybersecurity Engineer at DOCAPOSTE in Paris.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="document.getElementById('virtualTwin').click()">
+                        Chat with My Virtual Twin
+                    </button>
+                    <a href="#resume" class="btn-secondary">View Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Section -->
+    <section id="chat" class="chat-section">
+        <div class="container">
+            <h2 class="section-title">Chat with My Virtual Twin</h2>
+            <p class="section-subtitle">
+                Experience an interactive conversation powered by AI. Ask about my experience, 
+                skills, projects, or career journey in cybersecurity.
+            </p>
+            <div class="chat-preview">
+                <div class="chat-preview-avatar">
+                    <img src="/0615(1).gif" alt="Virtual Twin">
+                </div>
+                <div class="chat-preview-content">
+                    <h3>Intelligent & Professional</h3>
+                    <p>My virtual twin is trained on my complete professional background and can provide detailed insights about my experience in cybersecurity, network administration, and AI security research.</p>
+                    <button class="btn-primary" onclick="document.getElementById('virtualTwin').click()">
+                        Start Conversation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Stegano-Application</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Jadyle/Stegano-Application" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Advanced steganography application that conceals messages within images using LSB (Least Significant Bit) techniques.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">GUI</span>
+                        <span class="tech-tag">Cryptography</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Password Manager CLI</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Jadyle/Password-Manager-CLI" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Educational tool demonstrating encryption/decryption principles with secure password storage capabilities.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Rust</span>
+                        <span class="tech-tag">OpenSSL</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">SQLCipher</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Network Scanner</h3>
+                    </div>
+                    <p class="project-description">
+                        High-performance CLI TCP port scanner with multi-threading capabilities for network security assessment.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Rust</span>
+                        <span class="tech-tag">TCP/IP</span>
+                        <span class="tech-tag">Socket Programming</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Active Directory Pentesting Lab</h3>
+                    </div>
+                    <p class="project-description">
+                        Comprehensive training lab for Active Directory penetration testing with simulated vulnerabilities.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">ESXi</span>
+                        <span class="tech-tag">VMware</span>
+                        <span class="tech-tag">Kali Linux</span>
+                        <span class="tech-tag">Active Directory</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Web Pentesting CTF Platform</h3>
+                    </div>
+                    <p class="project-description">
+                        Gamified Capture The Flag platform designed to train web application penetration testing skills.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">LAMP Stack</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Security</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Automated Serverless Apps</h3>
+                    </div>
+                    <p class="project-description">
+                        Serverless image processing pipeline using Azure Functions and DevOps for automated workflows.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">.NET</span>
+                        <span class="tech-tag">PowerShell</span>
+                        <span class="tech-tag">DevOps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Latest in Tech</h2>
+            <p class="section-subtitle">
+                Explore our latest insights into technology, innovation, and the digital future.
+            </p>
+            
+            <div class="featured-article">
+                <div class="article-image">
+                    <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800" alt="AI Technology" loading="lazy">
+                </div>
+                <div class="article-content">
+                    <div class="article-meta">
+                        <span class="article-author">Lina Rashdan</span>
+                        <span class="article-date">January 15, 2025</span>
+                    </div>
+                    <h3 class="article-title">The Rise of AI: How Artificial Intelligence is Transforming Tech</h3>
+                    <p class="article-excerpt">
+                        Artificial Intelligence is revolutionizing every aspect of technology, from software development to daily automation. 
+                        Discover how AI is reshaping business innovation and what the future holds for this transformative technology.
+                    </p>
+                    <a href="blog-article.html" class="btn-primary">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-actions">
+                <a href="blog-archive.html" class="btn-secondary">Read More Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Professional Background</h2>
+            
+            <div class="resume-grid">
+                <div class="resume-card">
+                    <h3>Experience</h3>
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <h4>Cybersecurity Engineer - Intern</h4>
+                            <span class="exp-date">May 2025 - Present</span>
+                        </div>
+                        <p class="exp-company">DOCAPOSTE, Paris, France</p>
+                        <ul class="exp-tasks">
+                            <li>Conducted penetration testing and reported critical vulnerabilities</li>
+                            <li>Implemented secure AI agents to enhance productivity in the team</li>
+                            <li>Developed Business Continuity and Disaster Recovery Plan</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <h4>Research Associate, AI Security</h4>
+                            <span class="exp-date">Jan 2025 - Apr 2025</span>
+                        </div>
+                        <p class="exp-company">UQAC, Quebec, Canada</p>
+                        <ul class="exp-tasks">
+                            <li>Researched vulnerabilities in AI language models</li>
+                            <li>Developed ontology for AI vulnerabilities</li>
+                            <li>Writing a paper for ACM CCS conference</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <h4>Network Systems Administrator</h4>
+                            <span class="exp-date">Sep 2022 - Aug 2024</span>
+                        </div>
+                        <p class="exp-company">CLAAS, Velizy-Villacoublay, France</p>
+                        <ul class="exp-tasks">
+                            <li>Planned IT projects and resolved network issues</li>
+                            <li>Onboarded 300+ employees and configured IT systems</li>
+                            <li>Trained 1,000+ staff on Microsoft 365 tools</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-card">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>Bachelor of Science in Computer Science</h4>
+                        <p class="edu-school">
+                            <a href="https://www.linkedin.com/school/choisiruqac/" target="_blank" class="edu-link">
+                                Université du Québec à Chicoutimi (UQAC)
+                            </a>
+                        </p>
+                        <p class="edu-location">Quebec, Canada</p>
+                        <p class="edu-date">2024 - 2025</p>
+                        <p class="edu-detail">Concentration in Cybersecurity • GPA: 3.99</p>
+                        <p class="edu-detail">Dual degree exchange program with University Paris-Saclay</p>
+                        <p class="edu-detail">Thesis: Security of Satellite Communications Systems</p>
+                        <p class="edu-honor">
+                            <a href="https://www.iut-velizy-rambouillet.uvsq.fr/une-etudiante-de-but-3-rt-en-echange-a-lucaq" target="_blank" class="edu-link">
+                                Featured in UQAC Exchange Article
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="education-item">
+                        <h4>Bachelor Universitaire Technologique in Network and Telecommunications</h4>
+                        <p class="edu-school">
+                            <a href="https://fr.linkedin.com/school/universit-de-versailles-st--quentin-en-yvelines/?trk=public_profile_school" target="_blank" class="edu-link">
+                                UVSQ - Université de Versailles Saint-Quentin
+                            </a>
+                            ×
+                            <a href="https://www.linkedin.com/school/universit-paris-saclay/" target="_blank" class="edu-link">
+                                University Paris-Saclay
+                            </a>
+                        </p>
+                        <p class="edu-location">Vélizy-Villacoublay, France</p>
+                        <p class="edu-date">2023 - 2024</p>
+                        <p class="edu-detail">Network and Telecommunications • Concentration in Cybersecurity</p>
+                        <p class="edu-honor">
+                            <a href="https://www.iut-velizy-rambouillet.uvsq.fr/but-reseaux-et-telecommunications-rt" target="_blank" class="edu-link">
+                                Featured in Department Testimonial
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="education-item">
+                        <h4>
+                            <a href="https://en.wikipedia.org/wiki/Brevet_de_technicien_sup%C3%A9rieur" target="_blank" class="edu-link">
+                                Brevet de Technicien Supérieur (BTS)
+                            </a>
+                        </h4>
+                        <p class="edu-school">Lycée Fénelon Sainte-Marie</p>
+                        <p class="edu-location">Paris, France</p>
+                        <p class="edu-date">2022 - 2023</p>
+                        <p class="edu-detail">IT & Networks</p>
+                    </div>
+                </div>
+
+                <div class="resume-card">
+                    <h3>Skills & Certifications</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Technical Skills</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Rust</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">C/C++</span>
+                                <span class="skill-tag">PowerShell</span>
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">Windows Server</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Docker</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Security Expertise</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Penetration Testing</span>
+                                <span class="skill-tag">Cryptography</span>
+                                <span class="skill-tag">Network Security</span>
+                                <span class="skill-tag">OWASP</span>
+                                <span class="skill-tag">MITRE ATT&CK</span>
+                                <span class="skill-tag">Kali Linux</span>
+                                <span class="skill-tag">Burp Suite</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Certifications</h4>
+                            <div class="cert-list">
+                                <p>CCNA Security/R&S (CISCO) - Jul 2024</p>
+                                <p>CCNA (CISCO) - Expected Apr 2025</p>
+                                <p>TOEFL iBT (ETS) - Feb 2025</p>
+                                <p>CISA Trained (ISACA) - Apr 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-download">
+                <a href="/docs/Resume_Lina Rashdan.pdf" class="btn-primary" download>
+                    Download Full Resume (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">
+                Ready to discuss cybersecurity opportunities or collaborate on innovative projects? 
+                I'm based in Paris and always open to meaningful conversations.
+            </p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="mailto:L.rashdan@outlook.com">L.rashdan@outlook.com</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/lina-rashdan" target="_blank">linkedin.com/in/lina-rashdan</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/33333333333">+33 3 33 33 33 33 3</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>Paris, France</p>
+                    </div>
+
+                    <div class="contact-card meeting-card">
+                        <div class="contact-icon">☕</div>
+                        <h3>Coffee Chat</h3>
+                        <p>Let's discuss opportunities over coffee!</p>
+                        <a href="https://calendar.notion.so/meet/linarashdan/schedule" target="_blank" class="btn-primary meeting-btn">
+                            Book a Meeting
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Send me a message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Lina Rashdan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
