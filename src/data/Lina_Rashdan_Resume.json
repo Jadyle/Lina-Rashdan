@@ -1,0 +1,285 @@
+{
+  "basics": {
+    "name": "Lina Rashdan",
+    "label": "IT & Cybersecurity Professional",
+    "location": {
+      "city": "Paris",
+      "country": "France"
+    },
+    "email": "L.rashdan@outlook.com",
+    "phone": "+33 33 33 33 33 3",
+    "whatsapp": true,
+    "profiles": {
+      "linkedin": "https://www.linkedin.com/in/lina-rashdan",
+      "github": "https://github.com/Jadyle"
+    }
+  },
+  "education": [
+    {
+      "degree": "Bachelor in Computer Science and Network & Telecommunication",
+      "institution": "University Paris-Saclay",
+      "location": "France and Canada",
+      "date": "Graduated 2025",
+      "details": "Final year at University of Quebec at Chicoutimi (UQAC)",
+      "honors": [
+        "Honours Thesis: Security of Satellite Communications Systems"
+      ]
+    },
+    {
+      "degree": "BTS “Diploma of Advanced Technician in IT & Networks",
+      "institution": "Fénelon Sup Paris",
+      "location": "France",
+      "date": "from 2022 to 2023",
+      "details": "Transferred from the first year of BTS to the second year of Bachelor of Science at the University of Paris-Saclay.",
+    }
+  ],
+  "experience": [
+    {
+      "title": "Cybersecurity Engineer - Intern",
+      "company": "DOCAPOSTE",
+      "location": "Paris, France",
+      "date": "May 2025 - Present",
+      "tasks": [
+        "Conducted penetration testing and reported critical vulnerabilities.",
+        "Implemented secure AI agents to enhance team productivity while ensuring protection of sensitive data.",
+        "Developed Business Continuity and Disaster Recovery Plan simulating ransomware attack."
+      ]
+    },
+    {
+      "title": "Research Associate, AI Security",
+      "company": "UQAC",
+      "location": "Quebec, Canada",
+      "date": "Jan 2025 - Apr 2025",
+      "tasks": [
+        "Researched vulnerabilities in AI language models.",
+        "Developed an ontology for AI vulnerabilities and wrote paper for ACM CCS."
+      ]
+    },
+    {
+      "title": "Network Systems Administrator (Part-time)",
+      "company": "CLAAS",
+      "location": "Velizy-Villacoublay, France",
+      "date": "Sep 2022 - Aug 2024",
+      "tasks": [
+        "Planned IT projects and resolved network issues.",
+        "Onboarded 300+ employees and configured IT systems.",
+        "Trained 1,000+ staff on Microsoft 365 tools.",
+        "Presented identity management protocols and integration."
+      ]
+    },
+    {
+      "title": "Network Technician / Computer Assistant - Intern",
+      "company": "Perfect System",
+      "location": "Paris, France",
+      "date": "May 2020 - Dec 2021",
+      "tasks": [
+        "Resolved network connectivity issues and configured network services.",
+        "Provided first-level troubleshooting for various devices."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Stegano-Application",
+      "date": "Jan 2025",
+      "tools": [
+        "Python",
+        "GUI"
+      ],
+      "description": "Conceals messages within images using LSB steganography."
+    },
+    {
+      "title": "Password Manager",
+      "date": "Dec 2024",
+      "tools": [
+        "Rust",
+        "OpenSSL",
+        "SQLite",
+        "SQLCipher"
+      ],
+      "description": "Educational tool explaining encryption/decryption."
+    },
+    {
+      "title": "Network Scanner",
+      "date": "Nov 2024",
+      "tools": [
+        "Rust",
+        "TCP/IP",
+        "Socket"
+      ],
+      "description": "High-performance CLI TCP port scanner with multi-threading."
+    },
+    {
+      "title": "Automated Serverless Apps",
+      "date": "Oct 2024",
+      "tools": [
+        "Azure",
+        ".NET",
+        "PowerShell"
+      ],
+      "description": "Serverless image processing pipeline using Azure Functions and DevOps."
+    },
+    {
+      "title": "Active Directory Pentesting Lab",
+      "date": "Jun 2024",
+      "tools": [
+        "ESXi",
+        "VMWare",
+        "Kali Linux"
+      ],
+      "description": "Built training lab for AD pentesting with simulated vulnerabilities."
+    },
+    {
+      "title": "OFDM Simulation",
+      "date": "May 2024",
+      "tools": [
+        "Python",
+        "Jupyter"
+      ],
+      "description": "Simulated OFDM modulation and recovery over noisy channels."
+    },
+    {
+      "title": "Web Pentesting CTF Platform",
+      "date": "Mar 2024",
+      "tools": [
+        "LAMP",
+        "HTML5",
+        "CSS3"
+      ],
+      "description": "Developed gamified CTF platform to train web pentesting."
+    },
+    {
+      "title": "Student Attendance Android App",
+      "date": "Feb 2024",
+      "tools": [
+        "C",
+        "Java",
+        "Android Studio"
+      ],
+      "description": "Built client-server app for tracking classroom attendance."
+    },
+    {
+      "title": "Numeric Modulation",
+      "date": "Dec 2023",
+      "tools": [
+        "Python",
+        "Jupyter"
+      ],
+      "description": "Simulated digital modulation (PAM, ASK, QAM)."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "CCNA",
+      "issuer": "CISCO",
+      "date": "Expected Apr 2025"
+    },
+    {
+      "name": "TOEFL iBT",
+      "issuer": "ETS",
+      "date": "Feb 2025"
+    },
+    {
+      "name": "CCNA Security/R&S",
+      "issuer": "CISCO",
+      "date": "Jul 2024"
+    },
+    {
+      "name": "CISA (Trained)",
+      "issuer": "ISACA",
+      "date": "Apr 2022"
+    }
+  ],
+  "activities": [
+    {
+      "name": "Pitch ton stage",
+      "type": "Public Speaking",
+      "date": "Apr 2025"
+    },
+    {
+      "name": "Scientific Poster: Numeric Modulation",
+      "type": "Presentation",
+      "date": "Feb 2025"
+    },
+    {
+      "name": "Mystery Movie Club",
+      "type": "Founder",
+      "date": "Jan - Apr 2025"
+    },
+    {
+      "name": "Program Committee Member",
+      "date": "Dec 2024 - Apr 2025"
+    },
+    {
+      "name": "Cybersecurity Competition Committee",
+      "type": "Founder",
+      "date": "Nov 2024 - Apr 2025"
+    },
+    {
+      "name": "D\u00e9lit ta langue",
+      "type": "Public Speaking",
+      "date": "Nov 2024"
+    },
+    {
+      "name": "Honors: Top-ranked student",
+      "date": "Jan 2024"
+    }
+  ],
+  "skills": {
+    "project_management": true,
+    "team_training": true,
+    "knowledge_domains": [
+      "IT infrastructure",
+      "Networking",
+      "Telecommunications",
+      "IdM/IAM",
+      "Cryptography",
+      "Penetration Testing"
+    ],
+    "frameworks_and_standards": [
+      "ISO",
+      "NIST",
+      "OWASP",
+      "MITRE ATT&CK",
+      "PCI",
+      "PII",
+      "GDPR",
+      "SOX",
+      "COBIT",
+      "ITIL"
+    ],
+    "technologies": [
+      "AWS",
+      "VMware",
+      "Docker",
+      "Ansible",
+      "AzureDevOps",
+      "Cloud",
+      "AD",
+      "Windows Server",
+      "Linux",
+      "MySQL",
+      "Git",
+      "RADIUS",
+      "DMZ",
+      "Certificate Services",
+      "Kali Linux",
+      "WireShark",
+      "Burp Suite",
+      "REST APIs"
+    ],
+    "languages": [
+      "Python",
+      "Java",
+      "C",
+      "C++",
+      "Rust",
+      "PHP",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SQL",
+      "PowerShell"
+    ]
+  }
+}
